@@ -23,7 +23,7 @@ jobs:
 
     - name: Setup MSVC environment
       shell: cmd
-      run: call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x64
+      run: call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x64
 
     - name: Configure project with qmake
       shell: cmd
