@@ -1,0 +1,34 @@
+name: Qt CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Qt
+      uses: jurplel/install-qt-action@v2
+      with:
+        version: '6.6.0'
+        host: 'windows'
+        target: 'desktop'
+
+    - name: Setup MSVC environment
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Configure project with qmake
+      run: qmake AccountingBook.pro
+
+    - name: Build project
+      run: nmake
+
+    - name: Run tests
+      run: build/tests/integrationTest.exe
