@@ -1,0 +1,16 @@
+release/addrecordwindow.o
+release/database.o
+release/mainwindow.o
+release/querymanager.o
+release/querywindow.o
+release/statisticsmanager.o
+release/statisticswindow.o
+release/integrationTest.o
+release/transaction.o
+release/gtest-all.o
+release/gtest_main.o
+release/moc_addrecordwindow.o
+release/moc_database.o
+release/moc_mainwindow.o
+release/moc_querywindow.o
+release/moc_statisticswindow.o

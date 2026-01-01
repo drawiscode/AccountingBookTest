@@ -1,0 +1,16 @@
+debug/addrecordwindow.o
+debug/database.o
+debug/mainwindow.o
+debug/querymanager.o
+debug/querywindow.o
+debug/statisticsmanager.o
+debug/statisticswindow.o
+debug/integrationTest.o
+debug/transaction.o
+debug/gtest-all.o
+debug/gtest_main.o
+debug/moc_addrecordwindow.o
+debug/moc_database.o
+debug/moc_mainwindow.o
+debug/moc_querywindow.o
+debug/moc_statisticswindow.o
